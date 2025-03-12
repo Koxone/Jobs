@@ -1,0 +1,228 @@
+:root {
+    --color-primary: #00BA9E;  /* Verde agua */
+    --color-secondary: #33CBC0; /* Verde turquesa */
+    --color-accent: #00BAB3;    /* Verde más intenso */
+}
+
+* {
+    font-family: 'Big Shoulders';
+    box-sizing: border-box;
+}
+
+.mainMenuContainer {
+    display: none;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.generalContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.headerContainer {
+    display: flex;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    background-color: white;
+}
+
+.logoContainer {
+    width: 150px;
+}
+
+.logoContainer img {
+    width: 100%;
+}
+
+.menuContainer {
+    display: flex;
+    width: 100%;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 5px;
+    background-color: #071d49;
+    margin-top: 13px;
+}
+
+.menuContainer .smText {
+    color: white;
+    text-decoration: none;
+}
+
+.landingPageContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 35%;
+}
+
+.mainImageContainer {
+    width: 100%;
+}
+
+.mainImageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mainTextContainer, 
+.franchiseTextContainer, 
+.menuMainTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+}
+
+.ejemplo {
+    font-size: 10px;
+}
+
+.mainTextContainer .xlgText {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 33px;
+}
+
+.locationMapContainer {
+    width: 50px;
+}
+
+.newBegin, 
+.sellFranchise {
+    color: #00BAB3;
+}
+
+.franchiseContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.franchiseImageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 428px;
+    height: 573px;
+}
+
+.franchiseTextContainer .mainButton {
+    margin-top: -20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #00BAB3;
+    font-size: 16px;
+    color: white;
+    border: solid;
+}
+
+.franchiseContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.franchiseContainer .xlgText {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 33px;
+}
+
+.mosaicContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 48px;
+    gap: 32px;
+}
+
+.mosaic {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.mosaic img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.mosaicContainer .mainButton {
+    margin-top: -20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #00BAB3;
+    font-size: 16px;
+    color: white;
+    border: solid;
+}
+
+.menuMainTextContainer {
+    gap: 20px;
+}
+
+.menuTextContainer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 33px;
+}
+
+.locationsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+    border: 1px solid red;
+}
+
+.locationsCarousel {
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+
+.locationMapContainer {
+    width: 50px;
+    height: 50px;
+}
+
+
