@@ -283,5 +283,23 @@ iframe {
     height: 100%;
 }
 
+footer {
+    display: grid;
+    grid-template-areas: 
+    'menus redes'
+    'menus developer';
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+.menuFooterContainer {
+    grid-area: menus;
+    display: flex;
+    flex-direction: column;
+}
+
 
 
