@@ -9,15 +9,6 @@
     box-sizing: border-box;
 }
 
-.headerContainer, 
-.landingPageContainer, 
-.franchiseContainer, 
-.mosaicContainer, 
-.footerContainer,  
-.locationsContainer {
-    display: flex;
-}
-
 .mainMenuContainer {
     display: none;
 }
@@ -44,12 +35,13 @@
     position: fixed;
     top: 0%;
     left: 0%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 100vw;
-    height: 167px;
+    height: auto;
     background-color: white;
 }
 
@@ -79,13 +71,12 @@
 }
 
 .landingPageContainer {
+    display: flex;
     width: 100%;
-    height: 100vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 167px;
-    border: 1px solid black;
+    margin-top: 35%;
 }
 
 .mainImageContainer {
@@ -93,33 +84,84 @@
 }
 
 .mainImageContainer img {
+    display: flex;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.mainTextContainer, 
-.franchiseTextContainer, 
+.mainTextContainer,  
 .menuMainTextContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
-    padding: 8px;
+    height: 220px;
 }
 
-.ejemplo {
-    font-size: 10px;
+.locationTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.franchiseTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 205px;
+}
+
+.franchiseTextContainer .xlgText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 165px;
+    text-align: center;
+    font-size: 33px;
+    margin: 0;
+}
+
+.menuMainTextContainer .xlgText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 33px;
+    margin: 0;
+}
+
+.locationTextContainer .xlgText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    text-align: center;
+    font-size: 28px;
+    margin: 0;
 }
 
 .mainTextContainer .xlgText {
     display: inline-block;
+    justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 165px;
     text-align: center;
     font-size: 33px;
+    margin: 0;
+}
+
+.ejemplo {
+    font-size: 10px;
 }
 
 .locationMapContainer {
@@ -127,11 +169,15 @@
 }
 
 .newBegin, 
-.sellFranchise {
+.sellFranchise, 
+#sabores, 
+#sucursales {
     color: #00BAB3;
+    display: inline-block;
 }
 
 .franchiseContainer {
+    display: flex;
     flex-direction: column;
 }
 
@@ -144,8 +190,8 @@
     height: 573px;
 }
 
-.franchiseTextContainer .mainButton {
-    margin-top: -20px;
+.franchiseTextContainer .mainButton, 
+.mosaicContainer .mainButton {
     width: 100px;
     height: 40px;
     border-radius: 10px;
@@ -161,20 +207,13 @@
     object-fit: cover;
 }
 
-.franchiseContainer .xlgText {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    font-size: 33px;
-}
-
 .mosaicContainer {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 48px;
-    gap: 32px;
+    margin-top: 36px;
 }
 
 .mosaic {
@@ -191,21 +230,6 @@
     object-fit: cover;
 }
 
-.mosaicContainer .mainButton {
-    margin-top: -20px;
-    width: 100px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: #00BAB3;
-    font-size: 16px;
-    color: white;
-    border: solid;
-}
-
-.menuMainTextContainer {
-    gap: 20px;
-}
-
 .menuTextContainer {
     width: 100%;
     height: auto;
@@ -214,17 +238,13 @@
 }
 
 .locationsContainer {
+    display: flex;
     flex-direction: column;
     width: 100%;
     height: auto;
-    border: 1px solid green;
-}
-
-.locationTextContainer {
-    display: flex;
-    padding: 24px;
-    font-size: 24px;
-    text-align: center;
+    margin-bottom: 24px;
+    padding: 20px 0 30px 0;
+    background-color: #036859;
 }
 
 .locationsCarousel {
@@ -254,7 +274,12 @@
     align-items: center;
     font-size: 24px;
     font-weight: 700;
-    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+#locationText {
+    color: white;
 }
 
 iframe {
