@@ -1,204 +1,417 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marquesitas Las Hijas del Marques</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
-</head>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marquesitas Las Hijas del Marqués | Franquicias</title>
+        <link rel="icon" href="Assets/Favicon/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="Assets/Favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+        <link rel="icon" href="Assets/Favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+        <link rel="icon" href="Assets/Favicon/android-chrome-192x192.png" sizes="192x192" type="image/png">
+        <link rel="icon" href="Assets/Favicon/android-chrome-512x512.png" sizes="512x512" type="image/png">
+        <link rel="apple-touch-icon" href="Assets/Favicon/apple-touch-icon.png">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    
 <body>
     <main class="mainContainer">
         <div class="generalContainer">
-            <section class="headerContainer">
-                <div class="logoContainer">
-                    <img src="Assets/logos/logoMarquesitasSinFondo.webp" alt="">
+            <header class="headerContainer">
+                <div class="headerContent">
+                    <div class="logoContainer">
+                        <img src="Assets/logos/logoMarquesitasSinFondo.webp" alt="Logo Las Hijas del Marqués">
+                    </div>
+                    <div class="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <nav class="desktopMenu">
+                        <a href="#" class="navLink">Inicio</a>
+                        <a href="#franchise" class="navLink">Franquicias</a>
+                        <a href="#locations" class="navLink">Ubicaciones</a>
+                        <a href="#menu" class="navLink">Menú</a>
+                        <a href="#contact" class="navLink highlight">Contacto</a>
+                    </nav>
                 </div>
-                <div class="menuContainer">
-                        <a href="#" class="smText" id="headerFranquiciasMenu">
-                            Franquicias
-                        </a>
-                        <a href="#" class="smText" id="headerMenuLocations">
-                            Ubicaciones
-                        </a>
-                </div>
-            </section>
-            <section class="landingPageContainer">
-                <div class="mainImageContainer">
-                    <img id="mainImage" src="Assets/images/main.jpg" alt="">
-                </div>
-                <div class="mainTextContainer">
-                    <h1 class="xlgText">
-                        <span class="newBegin">Nuevos Comienzos</span> <br>acompanados de una Marquesita<br>
-                        <span class="ejemplo">
-                            * Las imagenes mostradas son puramente ilustrativas.
-                        </span>
-                    </h1>
-                </div>
-            </section>
-            <section class="franchiseContainer">
-                <div class="franchiseImageContainer">
-                    <img src="Assets/images/second.jpg" alt="">
-                </div>
-                <div class="franchiseTextContainer">
-                    <h2 class="xlgText" id="franchiseText">
-                        <span class="sellFranchise">Explora nuestro modelo de negocio! </span>
-                        Franquicias en venta.
-                    </h2>
-                    <button class="mainButton" id="contactButtonMain">
-                        Contactanos!
-                    </button>
-                </div>
-            </section>
-            <section class="mosaicContainer">
-                <div class="mosaic">
-                <img src="Assets/images/588d62b6-20fa-4a6e-bf56-3937aa753356.jpg" alt="">
-                <img src="Assets/images/6a84f588-c6e2-4357-9dda-5fd3803d385e.JPG" alt="">
-                <img src="Assets/images/IMG_1752.jpg" alt="">
-                <img src="Assets/images/IMG_2483.JPG" alt="">
-                </div>
-                <div class="menuMainTextContainer">
-                    <h2 class="xlgText">
-                        Prueba nuestra variedad de <span id="sabores">Sabores!</span>
-                    </h2>
-                    <button class="mainButton" id="menuButton">
-                        Menu
-                    </button>
-                </div>
+            </header>
 
+            <section class="heroSection">
+                <div class="heroOverlay"></div>
+                <div class="mainImageContainer">
+                    <img id="mainImage" src="Assets/images/main.jpg" alt="Marquesitas Las Hijas del Marqués">
+                </div>
+                <div class="heroContent">
+                    <h1 class="heroTitle">
+                        <span class="accent">Nuevos Comienzos</span> 
+                        <br>acompañados de una Marquesita
+                    </h1>
+                    <p class="heroSubtitle">Descubre el sabor que está conquistando México</p>
+                    <div class="heroCta">
+                        <a href="#franchise" class="primaryButton">Conoce nuestras franquicias</a>
+                        <a href="#locations" class="secondaryButton">Encuentra tu sucursal</a>
+                    </div>
+                    <p class="disclaimer">* Las imágenes mostradas son puramente ilustrativas.</p>
+                </div>
             </section>
-            <section class="locationsContainer">
-                <div class="locationsCarousel">
-                    <div class="locationMapContainer" id="delValle">
-                        <div class="mapTextContainer">
-                            <p class="branchName">
-                                Del Valle
+
+            <section id="franchise" class="franchiseSection">
+                <div class="sectionContainer">
+                    <div class="franchiseContent">
+                        <div class="franchiseText">
+                            <h2 class="sectionTitle">
+                                <span class="accent">Explora nuestro modelo de negocio</span>
+                                <br>Franquicias en venta
+                            </h2>
+                            <p class="sectionDescription">
+                                Únete a nuestra familia de emprendedores y forma parte de un negocio exitoso con más de 5 sucursales en la Ciudad de México. Ofrecemos un modelo de negocio probado, capacitación completa y soporte continuo.
                             </p>
+                            <div class="franchiseBenefits">
+                                <div class="benefit">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Inversión accesible</span>
+                                </div>
+                                <div class="benefit">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Capacitación completa</span>
+                                </div>
+                                <div class="benefit">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Soporte continuo</span>
+                                </div>
+                                <div class="benefit">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Marca reconocida</span>
+                                </div>
+                            </div>
+                            <a href="#contact" class="primaryButton">¡Contáctanos!</a>
                         </div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.7121442642856!2d-99.1725891!3d19.3816129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff9e631b8a13%3A0x72703fcc347b67b1!2sLas%20Hijas%20del%20Marqu%C3%A9s!5e0!3m2!1sen!2smx!4v1741664037336!5m2!1sen!2smx" 
-                        width="170px" height="170px" style="border:0;" allowfullscreen="" 
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div class="locationMapContainer" id="sanSimon">
-                        <div class="mapTextContainer">
-                            <p class="branchName">
-                                San Simon
-                            </p>
+                        <div class="franchiseImageContainer">
+                            <img src="Assets/images/second.jpg" alt="Franquicia Las Hijas del Marqués">
                         </div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.808739594028!2d-99.1462536!3d19.377432499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff4184f7952b%3A0xe6e8b0afe29688ee!2sMarquesitas%20%2F%20Las%20Hijas%20Del%20Marqu%C3%A9s!5e0!3m2!1sen!2smx!4v1741664051437!5m2!1sen!2smx" 
-                        width="170px" height="170px" style="border:0;" allowfullscreen="" 
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div class="locationMapContainer" id="alamos">
-                        <div class="mapTextContainer">
-                            <p class="branchName">
-                                Alamos
-                            </p>
-                        </div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.808739594028!2d-99.1462536!3d19.377432499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff4184f7952b%3A0xe6e8b0afe29688ee!2sMarquesitas%20%2F%20Las%20Hijas%20Del%20Marqu%C3%A9s!5e0!3m2!1sen!2smx!4v1741664067433!5m2!1sen!2smx" 
-                        width="170px" height="170px" style="border:0;" allowfullscreen="" 
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div class="locationMapContainer" id="narvarte">
-                        <div class="mapTextContainer">
-                            <p class="branchName">
-                                Narvarte
-                            </p>
-                        </div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.247773370763!2d-99.1585046!3d19.4016976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff10c473bc59%3A0xf3a37921d1f7344!2sEnrique%20R%C3%A9bsamen%20%26%20Casa%20del%20Obrero%20Mundial%2C%20Piedad%20Narvarte%2C%2003000%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1sen!2smx!4v1741664102903!5m2!1sen!2smx" 
-                        width="170px" height="170px" style="border:0;" allowfullscreen="" 
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div class="locationMapContainer" id="vertiz">
-                        <div class="mapTextContainer">
-                            <p class="branchName">
-                                Vertiz Narvarte
-                            </p>
-                        </div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.76527140233!2d-99.1573435!3d19.379313800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffa607d05dfb%3A0x918bc1423c425cb3!2sMat%C3%ADas%20Romero%201402%2C%20V%C3%A9rtiz%20Narvarte%2C%20Benito%20Ju%C3%A1rez%2C%2003600%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1sen!2smx!4v1741664128896!5m2!1sen!2smx" 
-                        width="170px" height="170px" style="border:0;" allowfullscreen="" 
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-                <div class="locationTextContainer">
-                    <h2 class="xlgText" id="locationText">
-                        Siempre estamos cerca de ti! <br> <span id="sucursales">Visita nuestras sucursales.</span>
+            </section>
+
+            <section id="menu" class="menuSection">
+                <div class="sectionContainer">
+                    <h2 class="sectionTitle centered">
+                        Prueba nuestra variedad de <span class="accent">¡Sabores!</span>
                     </h2>
+                    <p class="sectionDescription centered">
+                        Deliciosas marquesitas con rellenos dulces y salados para todos los gustos
+                    </p>
+                    
+                    <div class="mosaic">
+                        <div class="mosaicItem">
+                            <div class="mosaicImage">
+                                <img src="Assets/images/588d62b6-20fa-4a6e-bf56-3937aa753356.jpg" alt="Marquesita de chocolate">
+                                <div class="mosaicOverlay">
+                                    <span>Chocolate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mosaicItem">
+                            <div class="mosaicImage">
+                                <img src="Assets/images/6a84f588-c6e2-4357-9dda-5fd3803d385e.JPG" alt="Marquesita de cajeta">
+                                <div class="mosaicOverlay">
+                                    <span>Cajeta</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mosaicItem">
+                            <div class="mosaicImage">
+                                <img src="Assets/images/IMG_1752.jpg" alt="Marquesita de queso">
+                                <div class="mosaicOverlay">
+                                    <span>Queso</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mosaicItem">
+                            <div class="mosaicImage">
+                                <img src="Assets/images/IMG_2483.JPG" alt="Marquesita especial">
+                                <div class="mosaicOverlay">
+                                    <span>Especial</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menuCta">
+                        <a href="#" class="primaryButton">Ver menú completo</a>
+                    </div>
                 </div>
             </section>
-            <footer class="footerContainer">
-                <div class="menuFooterContainer">
-                    <a href="#" class="smText">
-                        Inicio
-                    </a>
-                    <a href="#" class="smText">
-                        Franquicias
-                    </a>
-                    <a href="#" class="smText">
-                        Ubicaciones
-                    </a>
-                    <a href="#" class="smText">
-                        Menu
-                    </a>
-                    <a href="#" class="smText">
-                        Contactanos
-                    </a>
+
+            <section id="locations" class="locationsSection">
+                <div class="sectionContainer">
+                    <h2 class="sectionTitle centered light">
+                        ¡Siempre estamos cerca de ti! <br> 
+                        <span class="accent-light">Visita nuestras sucursales</span>
+                    </h2>
+                    
+                    <div class="locationsSlider">
+                        <div class="locationControls">
+                            <button class="locationControl active" data-location="delValle">Del Valle</button>
+                            <button class="locationControl" data-location="sanSimon">San Simón</button>
+                            <button class="locationControl" data-location="alamos">Álamos</button>
+                            <button class="locationControl" data-location="narvarte">Narvarte</button>
+                            <button class="locationControl" data-location="vertiz">Vértiz Narvarte</button>
+                        </div>
+                        
+                        <div class="locationsCarousel">
+                            <div class="locationCard active" id="delValle">
+                                <div class="locationInfo">
+                                    <h3 class="locationName">Del Valle</h3>
+                                    <p class="locationAddress">Av. Insurgentes Sur 1234, Col. Del Valle</p>
+                                    <p class="locationHours">Lun-Dom: 12:00 - 21:00</p>
+                                    <a href="tel:+525528556677" class="locationPhone">
+                                        <i class="fas fa-phone"></i> 55 2855 6677
+                                    </a>
+                                </div>
+                                <div class="locationMap">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.7121442642856!2d-99.1725891!3d19.3816129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff9e631b8a13%3A0x72703fcc347b67b1!2sLas%20Hijas%20del%20Marqu%C3%A9s!5e0!3m2!1sen!2smx!4v1741664037336!5m2!1sen!2smx" 
+                                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            
+                            <div class="locationCard" id="sanSimon">
+                                <div class="locationInfo">
+                                    <h3 class="locationName">San Simón</h3>
+                                    <p class="locationAddress">Av. San Simón 567, Col. San Simón</p>
+                                    <p class="locationHours">Lun-Dom: 12:00 - 21:00</p>
+                                    <a href="tel:+525528556677" class="locationPhone">
+                                        <i class="fas fa-phone"></i> 55 2855 6677
+                                    </a>
+                                </div>
+                                <div class="locationMap">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.808739594028!2d-99.1462536!3d19.377432499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff4184f7952b%3A0xe6e8b0afe29688ee!2sMarquesitas%20%2F%20Las%20Hijas%20Del%20Marqu%C3%A9s!5e0!3m2!1sen!2smx!4v1741664051437!5m2!1sen!2smx" 
+                                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            
+                            <div class="locationCard" id="alamos">
+                                <div class="locationInfo">
+                                    <h3 class="locationName">Álamos</h3>
+                                    <p class="locationAddress">Av. Álamos 890, Col. Álamos</p>
+                                    <p class="locationHours">Lun-Dom: 12:00 - 21:00</p>
+                                    <a href="tel:+525528556677" class="locationPhone">
+                                        <i class="fas fa-phone"></i> 55 2855 6677
+                                    </a>
+                                </div>
+                                <div class="locationMap">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.808739594028!2d-99.1462536!3d19.377432499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff4184f7952b%3A0xe6e8b0afe29688ee!2sMarquesitas%20%2F%20Las%20Hijas%20Del%20Marqu%C3%A9s!5e0!3m2!1sen!2smx!4v1741664067433!5m2!1sen!2smx" 
+                                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            
+                            <div class="locationCard" id="narvarte">
+                                <div class="locationInfo">
+                                    <h3 class="locationName">Narvarte</h3>
+                                    <p class="locationAddress">Enrique Rébsamen & Casa del Obrero Mundial, Piedad Narvarte</p>
+                                    <p class="locationHours">Lun-Dom: 12:00 - 21:00</p>
+                                    <a href="tel:+525528556677" class="locationPhone">
+                                        <i class="fas fa-phone"></i> 55 2855 6677
+                                    </a>
+                                </div>
+                                <div class="locationMap">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.247773370763!2d-99.1585046!3d19.4016976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff10c473bc59%3A0xf3a37921d1f7344!2sEnrique%20R%C3%A9bsamen%20%26%20Casa%20del%20Obrero%20Mundial%2C%20Piedad%20Narvarte%2C%2003000%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1sen!2smx!4v1741664102903!5m2!1sen!2smx" 
+                                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            
+                            <div class="locationCard" id="vertiz">
+                                <div class="locationInfo">
+                                    <h3 class="locationName">Vértiz Narvarte</h3>
+                                    <p class="locationAddress">Matías Romero 1402, Vértiz Narvarte</p>
+                                    <p class="locationHours">Lun-Dom: 12:00 - 21:00</p>
+                                    <a href="tel:+525528556677" class="locationPhone">
+                                        <i class="fas fa-phone"></i> 55 2855 6677
+                                    </a>
+                                </div>
+                                <div class="locationMap">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.76527140233!2d-99.1573435!3d19.379313800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffa607d05dfb%3A0x918bc1423c425cb3!2sMat%C3%ADas%20Romero%201402%2C%20V%C3%A9rtiz%20Narvarte%2C%20Benito%20Ju%C3%A1rez%2C%2003600%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1sen!2smx!4v1741664128896!5m2!1sen!2smx" 
+                                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="iconsContainer">
-                    <a href="https://www.instagram.com/lashijasdelmarques/" class="icon" id="instagram">
-                        <img src="Assets/Icons/icons8-instagram-50.png" alt="Instagram Logo in a shape of green color">
-                    </a>
-                    <a href="https://www.facebook.com/LASHIJASDELMARQUES/" class="icon" id="facebook">
-                        <img src="Assets/Icons/icons8-facebook-48.png" alt="Facebook Logo in a shape of green color">
-                    </a>
-                    <a href="tel:+525528556677" class="icon" id="">
-                        <img src="Assets/Icons/icons8-phone-50.png" alt="">
-                    </a><!--Cambiar por telefono real-->
+            </section>
+            
+            <section id="contact" class="contactSection">
+                <div class="sectionContainer">
+                    <h2 class="sectionTitle centered">
+                        ¿Interesado en una <span class="accent">franquicia</span>?
+                    </h2>
+                    <p class="sectionDescription centered">
+                        Completa el formulario y nos pondremos en contacto contigo a la brevedad
+                    </p>
+                    
+                    <div class="contactContent">
+                        <div class="contactForm">
+                            <form id="franchiseForm">
+                                <div class="formGroup">
+                                    <label for="name">Nombre completo</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="formGroup">
+                                    <label for="email">Correo electrónico</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="formGroup">
+                                    <label for="phone">Teléfono</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <div class="formGroup">
+                                    <label for="city">Ciudad de interés</label>
+                                    <input type="text" id="city" name="city" required>
+                                </div>
+                                <div class="formGroup">
+                                    <label for="message">Mensaje</label>
+                                    <textarea id="message" name="message" rows="4"></textarea>
+                                </div>
+                                <button type="submit" class="primaryButton fullWidth">Enviar solicitud</button>
+                            </form>
+                        </div>
+                        <div class="contactInfo">
+                            <div class="infoCard">
+                                <div class="infoIcon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="infoContent">
+                                    <h3>Oficinas centrales</h3>
+                                    <p>Av. Insurgentes Sur 1234, Col. Del Valle, CDMX</p>
+                                </div>
+                            </div>
+                            <div class="infoCard">
+                                <div class="infoIcon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="infoContent">
+                                    <h3>Teléfono</h3>
+                                    <p><a href="tel:+525528556677">55 2855 6677</a></p>
+                                </div>
+                            </div>
+                            <div class="infoCard">
+                                <div class="infoIcon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="infoContent">
+                                    <h3>Correo electrónico</h3>
+                                    <p><a href="mailto:franquicias@lashijasdelmarques.com">franquicias@lashijasdelmarques.com</a></p>
+                                </div>
+                            </div>
+                            <div class="socialLinks">
+                                <a href="https://www.facebook.com/LASHIJASDELMARQUES/" class="socialLink">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/lashijasdelmarques/" class="socialLink">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="socialLink">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="PolicyContainer">
-                    <div class="termsContainer"></div>
-                    <div class="privacyPolicyContainer"></div>
-                    <div class="developerContainer">
-                        <p class="xsText" id="copyrightMarquesitas">
-                            &reg;Las Hijas del Marques 2025
-                        </p>
-                        <p class="xsText" id="copyrightKoxland">
-                            &reg; Desarrollado por Koxland Inc. 2025
-                        </p>
+            </section>
+
+            <footer class="footerSection">
+                <div class="footerContainer">
+                    <div class="footerColumns">
+                        <div class="footerColumn">
+                            <div class="footerLogo">
+                                <img src="Assets/logos/logoMarquesitasSinFondo.webp" alt="Logo Las Hijas del Marqués">
+                            </div>
+                            <p class="footerDescription">
+                                Las Hijas del Marqués es una empresa dedicada a la elaboración y venta de marquesitas, un delicioso postre tradicional.
+                            </p>
+                        </div>
+                        
+                        <div class="footerColumn">
+                            <h3 class="footerTitle">Enlaces rápidos</h3>
+                            <nav class="footerNav">
+                                <a href="#" class="footerLink">Inicio</a>
+                                <a href="#franchise" class="footerLink">Franquicias</a>
+                                <a href="#locations" class="footerLink">Ubicaciones</a>
+                                <a href="#menu" class="footerLink">Menú</a>
+                                <a href="#contact" class="footerLink">Contacto</a>
+                            </nav>
+                        </div>
+                        
+                        <div class="footerColumn">
+                            <h3 class="footerTitle">Contacto</h3>
+                            <div class="footerContact">
+                                <p><i class="fas fa-map-marker-alt"></i> Av. Insurgentes Sur 1234, CDMX</p>
+                                <p><i class="fas fa-phone"></i> <a href="tel:+525528556677">55 2855 6677</a></p>
+                                <p><i class="fas fa-envelope"></i> <a href="mailto:info@lashijasdelmarques.com">info@lashijasdelmarques.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="footerColumn">
+                            <h3 class="footerTitle">Síguenos</h3>
+                            <div class="footerSocial">
+                                <a href="https://www.facebook.com/LASHIJASDELMARQUES/" class="socialIcon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/lashijasdelmarques/" class="socialIcon">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="socialIcon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="footerBottom">
+                        <div class="footerCopyright">
+                            <p>&copy; Las Hijas del Marqués 2025. Todos los derechos reservados.</p>
+                        </div>
+                        <div class="footerLegal">
+                            <a href="#" class="legalLink">Términos y condiciones</a>
+                            <a href="#" class="legalLink">Política de privacidad</a>
+                            <p class="developerCredit">Desarrollado por Koxland Inc. 2025</p>
+                        </div>
                     </div>
                 </div>
             </footer>
         </div>
-        <div class="mainMenuContainer" id="mainMenuContainer">
-            <div class="mainMenuLogoContainer">
-                Logo Principal
+        
+        <div class="mobileMenu">
+            <div class="mobileMenuHeader">
+                <div class="mobileMenuLogo">
+                    <img src="Assets/logos/logoMarquesitasSinFondo.webp" alt="Logo Las Hijas del Marqués">
+                </div>
+                <div class="mobileMenuClose">
+                    <i class="fas fa-times"></i>
+                </div>
             </div>
-            <a href="#" class="menuLgText">
-                Inicio
-            </a>
-            <a href="#" class="menuLgText">
-                Franquicias
-            </a>
-            <a href="#" class="menuLgText">
-                Ubicaciones
-            </a>
-            <a href="#" class="menuLgText">
-                Nuestra Historia
-            </a>
-            <div class="mainMenuIconsContainer">
-                <a href="https://www.instagram.com/lashijasdelmarques/" class="icon" id="instagram">
-                    <img src="Assets/Icons/icons8-instagram-50.png" alt="Instagram Logo in a shape of green color">
+            <nav class="mobileMenuNav">
+                <a href="#" class="mobileMenuLink">Inicio</a>
+                <a href="#franchise" class="mobileMenuLink">Franquicias</a>
+                <a href="#locations" class="mobileMenuLink">Ubicaciones</a>
+                <a href="#menu" class="mobileMenuLink">Menú</a>
+                <a href="#contact" class="mobileMenuLink">Contacto</a>
+            </nav>
+            <div class="mobileMenuSocial">
+                <a href="https://www.facebook.com/LASHIJASDELMARQUES/" class="mobileMenuSocialLink">
+                    <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="https://www.facebook.com/LASHIJASDELMARQUES/" class="icon" id="facebook">
-                    <img src="Assets/Icons/icons8-facebook-48.png" alt="Facebook Logo in a shape of green color">
+                <a href="https://www.instagram.com/lashijasdelmarques/" class="mobileMenuSocialLink">
+                    <i class="fab fa-instagram"></i>
                 </a>
-                <a href="tel:+525528556677" class="icon" id="">
-                    <img src="Assets/Icons/icons8-phone-50.png" alt="">
-                </a><!--Cambiar por telefono real-->
+                <a href="tel:+525528556677" class="mobileMenuSocialLink">
+                    <i class="fas fa-phone"></i>
+                </a>
             </div>
         </div>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
