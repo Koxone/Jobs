@@ -119,4 +119,73 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Lightbox para la galería - CORREGIDO
+    const galleryItems = document.querySelectorAll('.galleryItem');
+    const lightboxModal = document.querySelector('.lightboxModal');
+    const modalImage = document.querySelector('.modalImage');
+    const modalCaption = document.querySelector('.modalCaption');
+    const closeModal = document.querySelector('.closeModal');
+
+    if (galleryItems.length && lightboxModal && modalImage && closeModal) {
+        // Inicializar el modal con display none
+        lightboxModal.style.display = 'none';
+        
+        // Abrir el modal al hacer clic en una imagen de la galería
+        galleryItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const imgSrc = this.querySelector('.galleryImage').src;
+                const imgAlt = this.querySelector('.galleryImage').alt;
+                const caption = this.querySelector('.galleryOverlay span').textContent;
+                
+                modalImage.src = imgSrc;
+                modalImage.alt = imgAlt;
+                modalCaption.textContent = caption;
+                
+                // Mostrar el modal primero
+                lightboxModal.style.display = 'flex';
+                
+                // Forzar un reflow para que la transición funcione
+                lightboxModal.offsetHeight;
+                
+                // Luego añadir la clase active para la animación
+                setTimeout(() => {
+                    lightboxModal.classList.add('active');
+                    document.body.style.overflow = 'hidden'; // Evitar scroll en el fondo
+                }, 10);
+            });
+        });
+        
+        // Función para cerrar el modal
+        function closeModalFunction() {
+            // Primero quitar la clase active
+            lightboxModal.classList.remove('active');
+            
+            // Después de la transición, ocultar el modal
+            setTimeout(() => {
+                lightboxModal.style.display = 'none';
+                document.body.style.overflow = ''; // Restaurar scroll
+                
+                // Limpiar la imagen para liberar memoria
+                modalImage.src = '';
+            }, 300);
+        }
+        
+        // Cerrar el modal al hacer clic en la X
+        closeModal.addEventListener('click', closeModalFunction);
+        
+        // Cerrar el modal al hacer clic fuera de la imagen
+        lightboxModal.addEventListener('click', function(e) {
+            if (e.target === lightboxModal) {
+                closeModalFunction();
+            }
+        });
+        
+        // Cerrar el modal con la tecla ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightboxModal.classList.contains('active')) {
+                closeModalFunction();
+            }
+        });
+    }
 });
