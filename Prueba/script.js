@@ -119,4 +119,53 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Lightbox para la galería
+const galleryItems = document.querySelectorAll('.galleryItem');
+const lightboxModal = document.querySelector('.lightboxModal');
+const modalImage = document.querySelector('.modalImage');
+const modalCaption = document.querySelector('.modalCaption');
+const closeModal = document.querySelector('.closeModal');
+
+if (galleryItems.length && lightboxModal && modalImage && closeModal) {
+    // Abrir el modal al hacer clic en una imagen de la galería
+    galleryItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const imgSrc = this.querySelector('.galleryImage').src;
+            const imgAlt = this.querySelector('.galleryImage').alt;
+            const caption = this.querySelector('.galleryOverlay span').textContent;
+            
+            modalImage.src = imgSrc;
+            modalImage.alt = imgAlt;
+            modalCaption.textContent = caption;
+            
+            // Mostrar el modal con animación
+            lightboxModal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Evitar scroll en el fondo
+        });
+    });
+    
+    // Cerrar el modal al hacer clic en la X
+    closeModal.addEventListener('click', function() {
+        lightboxModal.classList.remove('active');
+        setTimeout(() => {
+            lightboxModal.style.display = 'none';
+            document.body.style.overflow = ''; // Restaurar scroll
+        }, 300);
+    });
+    
+    // Cerrar el modal al hacer clic fuera de la imagen
+    lightboxModal.addEventListener('click', function(e) {
+        if (e.target === lightboxModal) {
+            closeModal.click();
+        }
+    });
+    
+    // Cerrar el modal con la tecla ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && lightboxModal.classList.contains('active')) {
+            closeModal.click();
+        }
+    });
+}
 });
