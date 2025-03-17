@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Etereah - Explora nuestra colección de perfumes de alta calidad">
+    <title>Categoría - Etereah</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="category.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="assets/logos/solo-trebol.svg">
+</head>
+<body class="category-page">
+    <header class="category-header">
+        <div class="category-header-container">
+            <div class="logo-container">
+                <img src="assets/logos/solo-trebol.svg" alt="Logo Etereah" class="header-logo-icon">
+                <span class="header-logo-text">Etereah</span>
+            </div>
+            <div class="header-actions">
+                <div class="cart-count" id="cartCount">0</div>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="category-main">
+        <section class="category-content">
+            <div class="category-toolbar">
+                <div class="product-count" id="productCount">3 productos</div>
+                <button class="filter-button" id="filterButton">Filtrar</button>
+            </div>
+
+            <div class="filter-panel" id="filterPanel">
+                <div class="filter-header">
+                    <h3>Filtros</h3>
+                    <button class="close-filter" id="closeFilter">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="filter-section">
+                    <h4>Precio</h4>
+                    <div class="price-range">
+                        <input type="range" min="0" max="2000" value="2000" class="price-slider" id="priceSlider">
+                        <div class="price-values">
+                            <span>$0</span>
+                            <span id="priceValue">$2000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <h4>Categoría</h4>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="dama"> Dama
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="caballero"> Caballero
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="unisex"> Unisex
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <h4>Tipo</h4>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="type" value="eau-de-parfum"> Eau de Parfum
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="type" value="eau-de-toilette"> Eau de Toilette
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-actions">
+                    <button class="clear-filters" id="clearFilters">Limpiar filtros</button>
+                    <button class="apply-filters" id="applyFilters">Aplicar</button>
+                </div>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <!-- Producto 1 -->
+                <div class="category-product-card" data-product-id="1" data-price="610" data-category="dama">
+                    <a href="product.html?id=1" class="product-link">
+                        <div class="product-image-container">
+                            <img src="assets/productCarousel/sakeena.jpg" alt="SAKEENA perfume" class="product-image">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">SAKEENA</h3>
+                            <p class="product-price">$610.00</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="category-product-card" data-product-id="2" data-price="940" data-category="unisex">
+                    <a href="product.html?id=2" class="product-link">
+                        <div class="product-image-container">
+                            <img src="assets/productCarousel/amber-musk.jpg" alt="AMBER MUSK RED perfume" class="product-image">
+                            <div class="product-badge">best seller</div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">AMBER MUSK RED</h3>
+                            <p class="product-price">$940.00</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="category-product-card" data-product-id="3" data-price="770" data-category="caballero">
+                    <a href="product.html?id=3" class="product-link">
+                        <div class="product-image-container">
+                            <img src="assets/productCarousel/DSC_0051.JPG" alt="NADER perfume" class="product-image">
+                            <div class="product-badge">best seller</div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">NADER</h3>
+                            <p class="product-price">$770.00</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pagination" id="pagination">
+                <button class="pagination-button active">1</button>
+                <button class="pagination-button">2</button>
+                <button class="pagination-button">3</button>
+                <button class="pagination-button next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="no-results" id="noResults" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No se encontraron productos</h3>
+                <p>Intenta con otros filtros o revisa nuestra colección completa</p>
+                <button class="view-all-button" id="viewAllButton">Ver todos los productos</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="footer-menus">
+            <div class="footer-column">
+                <h3 class="footer-title">Tienda</h3>
+                <nav class="footer-nav">
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="shop.html" class="footer-link">Tienda</a>
+                </nav>
+            </div>
+            
+            <div class="footer-column">
+                <h3 class="footer-title">Políticas</h3>
+                <nav class="footer-nav">
+                    <a href="#" class="footer-link">Términos y Condiciones</a>
+                    <a href="#" class="footer-link">Política de Privacidad</a>
+                    <a href="#" class="footer-link">Política de Cambios o Devoluciones</a>
+                    <a href="#" class="footer-link">Política de Envío</a>
+                </nav>
+            </div>
+            
+            <div class="footer-column">
+                <h3 class="footer-title">Contáctanos!</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Ignacio Allende 90</p>
+                    <p>Ciudad de México</p>
+                    <a href="mailto:ventas@etereah.com" class="footer-link"><i class="fas fa-envelope"></i> ventas@etereah.com</a>
+                    <p><i class="fas fa-phone"></i> 123-456-7890</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-logo">
+            <img src="assets/logos/solo-trebol-blanco.svg" alt="Logo Etereah">
+            <span class="footer-logo-text">Etereah</span>
+        </div>
+        
+        <div class="footer-bottom">
+            <p class="copyright">© 2025 Desarrollado por Koxland Inc.</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTop" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Script para la funcionalidad básica -->
+    <script>
+        // Mostrar/ocultar panel de filtros
+        document.getElementById('filterButton').addEventListener('click', function() {
+            document.getElementById('filterPanel').classList.add('show');
+        });
+
+        document.getElementById('closeFilter').addEventListener('click', function() {
+            document.getElementById('filterPanel').classList.remove('show');
+        });
+
+        // Actualizar valor del slider de precio
+        document.getElementById('priceSlider').addEventListener('input', function() {
+            document.getElementById('priceValue').textContent = '$' + this.value;
+        });
+
+        // Botón volver arriba
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

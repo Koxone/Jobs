@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Etereah - Perfumes de calidad garantizada. Encuentra fragancias exclusivas para dama y caballero.">
+    <meta name="keywords" content="perfumes, fragancias, Etereah, calidad, dama, caballero, ofertas">
+    <title>Etereah - Perfumes de Calidad</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="assets/logos/solo-trebol.svg">
+</head>
+<body>
+    <main class="mainContainer">
+        <section class="generalContainer">
+            <!-- Header y Hero Section -->
+            <section class="landingPage">
+                <div class="menuHeaderContainer">
+                    <div class="logoContainer">
+                        <img src="assets/logos/solo-trebol.svg" id="trebol" alt="Logo Etereah">
+                        <p id="letrasLogo">Etereah</p>
+                    </div>
+                    <div class="headerActions">
+                        <div class="shoppingCarItemsContainer">
+                            <span>0</span>
+                        </div>
+                        <div class="deployMenuContainer">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainProductImageContainer">
+                    <img src="assets/images/main.webp" alt="Imagen promocional de un perfume" class="heroImage">
+                    <div class="mainTextContainer">
+                        <h1 class="xlgText">Etereah</h1>
+                        <h4 class="lgText">Calidad garantizada</h4>
+                        <div class="mainButtonContainer">
+                            <button class="buyNowButton" id="mainBuyNowButton">
+                                Compra ya!
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="freeShippingBannerContainer" id="mainFreeShippingBannerContainer">
+                    <p class="bannerText">
+                        <img id="trebolBanner" src="assets/logos/solo-trebol.svg" alt="Logo Etereah">
+                        <span>Envío gratis a partir de $2,000.00</span>
+                    </p>
+                </div>
+            </section>
+
+            <!-- Más Vendidos -->
+            <section class="productSection" aria-labelledby="bestsellers-title">
+                <h2 class="sectionTitle" id="bestsellers-title">Más Vendidos</h2>
+                <div class="productCarousel">
+                    <article class="productCard">
+                        <div class="productImageContainer">
+                            <img src="assets/productCarousel/DSC_0054.JPG" alt="Perfume Nader Jar">
+                            <div class="productOverlay">
+                                <button class="quickViewBtn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="productInfo">
+                            <h3 class="productName">NADER JAR</h3>
+                            <p class="productPrice">$750.00</p>
+                            <button class="addToCartButton">
+                                <i class="fas fa-shopping-cart"></i> Agregar al carrito
+                            </button>
+                        </div>
+                    </article>
+                    <article class="productCard">
+                        <div class="productImageContainer">
+                            <img src="assets/productCarousel/DSC_0052.JPG" alt="Perfume Nader">
+                            <div class="productOverlay">
+                                <button class="quickViewBtn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="productInfo">
+                            <h3 class="productName">NADER</h3>
+                            <p class="productPrice">$750.00</p>
+                            <button class="addToCartButton">
+                                <i class="fas fa-shopping-cart"></i> Agregar al carrito
+                            </button>
+                        </div>
+                    </article>
+                    <article class="productCard">
+                        <div class="productImageContainer">
+                            <img src="assets/productCarousel/DSC_0051.JPG" alt="Perfume Luxury">
+                            <div class="productOverlay">
+                                <button class="quickViewBtn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="productInfo">
+                            <h3 class="productName">LUXURY</h3>
+                            <p class="productPrice">$850.00</p>
+                            <button class="addToCartButton">
+                                <i class="fas fa-shopping-cart"></i> Agregar al carrito
+                            </button>
+                        </div>
+                    </article>
+                </div>
+                <div class="carouselControls">
+                    <button class="carouselControl prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carouselControl nextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </section>
+
+            <!-- Oferta del Mes -->
+            <section class="offerProductContainer" aria-labelledby="offer-title">
+                <div class="offerProductImage">
+                    <img src="assets/images/375x500.70387.jpg" alt="Oferta del mes">
+                </div>
+                <div class="offerTextContainer">
+                    <h3 class="offerTitle" id="offer-title">Oferta del Mes!</h3>
+                    <button class="buyNowButton" id="offerBuyNowButton">
+                        Compra Ya!
+                    </button>
+                </div>
+                <div class="freeShippingBannerContainer" id="offerFreeShippingBannerContainer">
+                    <p class="bannerText">
+                        <img id="trebolBanner" src="assets/logos/solo-trebol.svg" alt="Logo Etereah">
+                        <span>Envío gratis a partir de $2,000.00</span>
+                    </p>
+                </div>
+            </section>
+
+            <!-- Categorías -->
+            <section class="categoriesSection" aria-label="Categorías de productos">
+                <div class="categoryCard">
+                    <div class="categoryImageContainer">
+                        <img src="assets/images/woman-category.webp" alt="Categoría Dama">
+                    </div>
+                    <button class="categoryLabel">Dama</button>
+                </div>
+                
+                <div class="categoryCard">
+                    <div class="categoryImageContainer">
+                        <img src="assets/images/man-category.webp" alt="Categoría Perfumes">
+                    </div>
+                    <button class="categoryLabel">Perfumes</button>
+                </div>
+                
+                <div class="categoryCard">
+                    <div class="categoryImageContainer">
+                        <img src="assets/images/deals-category.webp" alt="Categoría Ofertas">
+                    </div>
+                    <button class="categoryLabel">Ofertas</button>
+                </div>
+            </section>
+
+            <!-- Nuestra Historia -->
+            <section class="ourStoryContainer" aria-labelledby="story-title">
+                <div class="storyTextContainer">
+                    <h2 class="storyTitle" id="story-title">Our story</h2>
+                    <p class="storyText">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aliquam perferendis fugit 
+                        molestiae nihil, sapiente magni facilis molestias eos officiis quis expedita doloremque! 
+                        Autem quisquam illo, dolor magnam veritatis hic?
+                    </p>
+                    <img id="ourStoryPerfume" src="assets/images/ourStoryPerfume.webp" alt="">
+                </div>
+            </section>
+
+            <!-- Instagram -->
+            <section class="socialMediaContainer" aria-labelledby="instagram-title">
+                <div class="socialHeader">
+                    <div class="iconContainer">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="socialTextContainer">
+                        <h3 class="socialTitle" id="instagram-title">Síguenos en Instagram!</h3>
+                        <p class="socialTag">#EtereahStore</p>
+                    </div>
+                </div>
+                
+                <div class="instagramGrid">
+                    <div class="instagramRow">
+                        <a href="#" class="instagramImage">
+                            <img src="assets/productCarousel/DSC_0026.JPG" alt="Instagram post">
+                            <div class="instagramOverlay">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="instagramImage">
+                            <img src="assets/productCarousel/DSC_0028.JPG" alt="Instagram post">
+                            <div class="instagramOverlay">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="instagramImage">
+                            <img src="assets/productCarousel/DSC_0029.JPG" alt="Instagram post">
+                            <div class="instagramOverlay">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="instagramRow">
+                        <a href="#" class="instagramImage">
+                            <img src="assets/productCarousel/DSC_0037.JPG" alt="Instagram post">
+                            <div class="instagramOverlay">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="instagramImage">
+                            <img src="assets/productCarousel/DSC_0041.JPG" alt="Instagram post">
+                            <div class="instagramOverlay">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="instagramImage">
+                            <img src="assets/productCarousel/DSC_0042.JPG" alt="Instagram post">
+                            <div class="instagramOverlay">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter -->
+            <section class="newsletterSection">
+                <div class="newsletterContainer">
+                    <h3 class="newsletterTitle">Suscríbete a nuestro newsletter</h3>
+                    <p class="newsletterText">Recibe nuestras ofertas y novedades directamente en tu correo</p>
+                    <form class="newsletterForm">
+                        <input type="email" placeholder="Tu correo electrónico" required class="newsletterInput">
+                        <button type="submit" class="newsletterButton">Suscribirse</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footerSection">
+                <div class="footerMenus">
+                    <div class="footerColumn">
+                        <h3 class="footerTitle">Tienda</h3>
+                        <nav class="footerNav">
+                            <a href="#" class="footerLink">Inicio</a>
+                            <a href="#" class="footerLink">Tienda</a>
+                            <a href="#" class="footerLink">Novedades</a>
+                            <a href="#" class="footerLink">Ofertas</a>
+                        </nav>
+                    </div>
+                    
+                    <div class="footerColumn">
+                        <h3 class="footerTitle">Políticas</h3>
+                        <nav class="footerNav">
+                            <a href="#" class="footerLink">Términos y Condiciones</a>
+                            <a href="#" class="footerLink">Política de Privacidad</a>
+                            <a href="#" class="footerLink">Política de Cambios y Devoluciones</a>
+                            <a href="#" class="footerLink">Política de Envíos</a>
+                        </nav>
+                    </div>
+                    
+                    <div class="footerColumn">
+                        <h3 class="footerTitle">Contáctanos!</h3>
+                        <div class="contactInfo">
+                            <p><i class="fas fa-map-marker-alt"></i> Ignacio Allende 90</p>
+                            <p>Ciudad de México</p>
+                            <a href="mailto:info@etereah.com" class="footerLink"><i class="fas fa-envelope"></i> info@etereah.com</a>
+                            <p><i class="fas fa-phone"></i> (55) 1234-5678</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footerLogo">
+                    <img src="assets/logos/solo-trebol-blanco.svg" alt="Logo Etereah">
+                    <span class="footerLogoText">Etereah</span>
+                </div>
+                
+                <div class="footerBottom">
+                    <p class="copyright">© 2025 Desarrollado por Koxland Inc.</p>
+                    <div class="socialIcons">
+                        <a href="#" class="socialIcon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="socialIcon" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="socialIcon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footerPayments">
+                    <p>Métodos de pago aceptados:</p>
+                    <div class="paymentIcons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <!-- Back to top button -->
+    <button id="backToTop" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+        // Back to top functionality
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

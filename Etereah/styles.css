@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+img {
+    width: 50px;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 24px;
+}
+
+.generalContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.landingPage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 609px;
+}
+
+.menuHeaderContainer {
+    position: absolute;
+    display: flex;
+    width: 279px;
+    height: 44px;
+    top: 4%;
+    left: 50%;
+    border-radius: 50px;
+    padding: 10px;
+    transform: translateX(-50%);
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    background-color: white;
+}
+
+.menuHeaderContainer .logoContainer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 125px;
+    height: 35px;
+}
+
+#trebol {
+    width: 28px;
+    height: 24px;
+}
+
+#letrasLogo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2D5143;
+    width: 93px;
+    height: 35px;
+}
+
+#trebolBanner {
+    align-self: center;
+    width: 15px;
+}
+
+.shoppingCarItemsContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    right: -11%;
+    width: 25px;
+    height: 25px;
+    background-color: #2D5143;
+    border-radius: 50%;
+}
+
+.deployMenuContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.deployMenuContainer img {
+    width: 25px;
+    height: 25px;
+}
+
+.mainProductImageContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.mainProductImageContainer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.mainProductImageContainer .mainTextContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: absolute;
+    bottom: 4%;
+    left: 0%;
+}
+
+.mainProductImageContainer .mainTextContainer .xlgText {
+    line-height: 100%;
+    font-size: 48px;
+    margin: 0;
+    color: #2B312F;
+    font-weight: 600;
+}
+
+.mainProductImageContainer .mainTextContainer .lgText {
+    line-height: 100%;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 25px;
+    opacity: 70%;
+    margin: 0 0 10px 0;
+    font-family: 'Faculty Glyphic';
+}
+
+.buyNowButton {
+    width: 148px;
+    height: 36px;
+    font-weight: 600;
+    color: white;
+    background-color: #627023;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.freeShippingBannerContainer {
+    position: absolute;
+    bottom: -30%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    width: 127%;
+    height: 38px;
+    border-radius: 0 0 10px 10px;
+    padding: 5px;
+    background-color: #E1F861;
+}
+
+.bannerText {
+    font-size: 19px;
+    font-weight: 600;
+    width: 100%;
+    color: #2D5143;
+}
+
